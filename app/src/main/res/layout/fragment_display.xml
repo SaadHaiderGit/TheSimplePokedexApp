@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/displayFragConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.DisplayFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Pokemon Selected!"
+                android:textAlignment="center"
+                android:textColor="#504848"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/classifyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#575252"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/pokeImage"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:src="@drawable/questionmark" />
+
+            <TextView
+                android:id="@+id/descText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\nNo Pokedex Entries Available."
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/formText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Form: " />
+
+            <TextView
+                android:id="@+id/abilitiesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abilities:" />
+
+            <TextView
+                android:id="@+id/typeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Typing: " />
+
+            <TextView
+                android:id="@+id/heightAndWeightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Height, Weight" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
